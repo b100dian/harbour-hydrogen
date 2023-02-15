@@ -25,7 +25,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(qt5embedwidget)
 BuildRequires:  pkgconfig(sailfishwebengine)
 BuildRequires:  desktop-file-utils
-BuildRequires:  git
+BuildRequires:  nodejs
 
 %description
 Short description of my Sailfish OS Application
@@ -33,14 +33,17 @@ Short description of my Sailfish OS Application
 
 %prep
 %setup -q -n %{name}-%{version}
-
 # >> setup
 # << setup
 
 %build
 # >> build pre
 # << build pre
-git submodule update -i
+cd hydrogen
+npm install -g yarn
+yarn
+yarn build
+cd -
 %qmake5
 
 make %{?_smp_mflags}
