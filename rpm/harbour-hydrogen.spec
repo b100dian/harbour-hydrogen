@@ -27,6 +27,7 @@ BuildRequires:  pkgconfig(sailfishwebengine)
 BuildRequires:  desktop-file-utils
 BuildRequires:  nodejs18
 BuildRequires:  npm18
+BuildRequires:  yarn
 
 %description
 Short description of my Sailfish OS Application
@@ -41,7 +42,6 @@ Short description of my Sailfish OS Application
 # >> build pre
 # << build pre
 cd hydrogen
-npm install -g yarn
 yarn
 yarn build
 cd -
