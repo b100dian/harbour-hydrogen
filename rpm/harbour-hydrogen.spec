@@ -26,6 +26,7 @@ BuildRequires:  pkgconfig(qt5embedwidget)
 BuildRequires:  pkgconfig(sailfishwebengine)
 BuildRequires:  desktop-file-utils
 BuildRequires:  nodejs18
+BuildRequires:  nodejs-default
 BuildRequires:  nodejs-common
 BuildRequires:  npm18
 BuildRequires:  yarn
