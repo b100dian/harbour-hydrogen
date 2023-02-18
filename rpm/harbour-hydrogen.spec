@@ -35,7 +35,7 @@ Short description of my Sailfish OS Application
 
 %prep
 %autosetup -n %{name}-%{version}
-tar -xJf %{SOURCE1}
+[ -f "%{SOURCE1}" ] && tar -xJf %{SOURCE1}
 
 # >> setup
 # << setup
@@ -45,7 +45,7 @@ tar -xJf %{SOURCE1}
 # << build pre
 cd hydrogen
 ls -al
-yarn install --cache .yarn-cache --offline
+yarn install --cache-folder .yarn-cache --prefer-offline
 yarn build
 cd -
 %qmake5
