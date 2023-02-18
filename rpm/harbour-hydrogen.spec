@@ -45,6 +45,7 @@ Short description of my Sailfish OS Application
 # >> build pre
 # << build pre
 cd hydrogen
+ls -al
 yarn install --cache .yarn-cache --prefer-offline
 yarn build
 cd -
