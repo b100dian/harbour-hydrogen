@@ -16,6 +16,7 @@ License:    LICENSE
 BuildArch:  noarch
 URL:        https://github.com/thigg/sfos-hydrogen
 Source0:    %{name}-%{version}.tar.bz2
+Source1:    yarn-cache.tar.xz
 Requires:   sailfishsilica-qt5 >= 0.10.9
 Requires:   sailfish-components-webview-qt5
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.3
@@ -44,7 +45,7 @@ Short description of my Sailfish OS Application
 # >> build pre
 # << build pre
 cd hydrogen
-yarn
+yarn install --cache .yarn-cache
 yarn build
 cd -
 %qmake5
