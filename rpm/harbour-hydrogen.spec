@@ -37,14 +37,13 @@ Short description of my Sailfish OS Application
 
 
 %prep
-%setup -q -n %{name}-%{version}
+%autosetup -q -n %{name}-%{version}
 # >> setup
 # << setup
 
 %build
 # >> build pre
 # << build pre
-tar -xJf yarn-cache.tar.xz
 cd hydrogen
 yarn install --cache .yarn-cache --prefer-offline
 yarn build
