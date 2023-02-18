@@ -45,7 +45,7 @@ tar -xJf %{SOURCE1}
 # << build pre
 cd hydrogen
 ls -al
-yarn install --cache .yarn-cache --prefer-offline
+yarn install --cache .yarn-cache --offline
 yarn build
 cd -
 %qmake5
