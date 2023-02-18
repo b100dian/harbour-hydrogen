@@ -26,10 +26,6 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(qt5embedwidget)
 BuildRequires:  pkgconfig(sailfishwebengine)
 BuildRequires:  desktop-file-utils
-BuildRequires:  nodejs18
-BuildRequires:  nodejs-default
-BuildRequires:  nodejs-common
-BuildRequires:  npm18
 BuildRequires:  yarn
 
 %description
@@ -38,7 +34,7 @@ Short description of my Sailfish OS Application
 
 %prep
 %autosetup -n %{name}-%{version}
-tar -xJf %{Source1} -C %{buildroot}
+tar -xJf %{SOURCE1} -C %{buildroot}
 
 # >> setup
 # << setup
