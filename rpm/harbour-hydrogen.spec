@@ -35,7 +35,7 @@ Short description of my Sailfish OS Application
 
 %prep
 %autosetup -n %{name}-%{version}
-tar -xJf %{SOURCE1} -C %{buildroot}
+tar -xJf %{SOURCE1}
 
 # >> setup
 # << setup
