@@ -37,7 +37,7 @@ Short description of my Sailfish OS Application
 
 
 %prep
-%autosetup -q -n %{name}-%{version}
+%autosetup -n %{name}-%{version}
 # >> setup
 # << setup
 
